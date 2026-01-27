@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thumbnails • Viks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- same header as other pages -->
+  <header class="topbar hidden" id="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Viks</div>
+
+      <nav class="nav">
+        <a href="index.html">Clients</a>
+        <a href="videos.html">Videos</a>
+        <a href="thumbnails.html" class="active">Thumbnails</a>
+        <a href="contacts.html">Contacts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="thumbs-page">
+    <div class="container">
+      <h1 class="page-title">Thumbnails</h1>
+      <p class="page-subtitle">Have been making thumbnails for not longer than a week so i am still working on bettering my thumbnail creation skills</p>
+
+      <div class="thumb-grid">
+        <!-- CARD 1 -->
+        <a class="thumb-card" href="assets/images/Thumb Couriwayy2.png" target="_blank" rel="noopener">
+          <div class="thumb-img">
+            <img src="assets/images/Thumb Couriwayy2.png" alt="Thumbnail" />
+          </div>
+          <div class="thumb-meta">
+            <h3 class="thumb-name">Pracite Thumbnail 2</h3>
+          </div>
+        </a>
+
+        <!-- CARD 2 -->
+        <a class="thumb-card" href="assets/images/Thumbnail Emerald Sword.png" target="_blank" rel="noopener">
+          <div class="thumb-img">
+            <img src="assets/images/Thumbnail Emerald Sword.png" alt="Thumbnail" />
+          </div>
+          <div class="thumb-meta">
+            <h3 class="thumb-name">This Sword Broke The Server</h3>
+          </div>
+        </a>
+
+        <a class="thumb-card" href="assets/images/Thumbnail Magma Cannon.png" target="_blank" rel="noopener">
+          <div class="thumb-img">
+            <img src="assets/images/Thumbnail Magma Cannon.png" alt="Thumbnail" />
+          </div>
+          <div class="thumb-meta">
+            <h3 class="thumb-name">I crafted the most underrated legendary weapon</h3>
+          </div>
+        </a>
+
+        <a class="thumb-card" href="assets/images/Thumbnail Sweatgod.png" target="_blank" rel="noopener">
+          <div class="thumb-img">
+            <img src="assets/images/Thumbnail Sweatgod.png" alt="Thumbnail" />
+          </div>
+          <div class="thumb-meta">
+            <h3 class="thumb-name">Whats better PVP or Trapping</h3>
+          </div>
+        </a>
+
+            <a class="thumb-card" href="assets/images/THumbnail 3.png" target="_blank" rel="noopener">
+          <div class="thumb-img">
+            <img src="assets/images/THumbnail 3.png" alt="Thumbnail" />
+          </div>
+          <div class="thumb-meta">
+            <h3 class="thumb-name">Pracite Thumbnail 3</h3>
+          </div>
+        </a>
+
+         <a class="thumb-card" href="assets/images/Practice Thumbnail 1.png" target="_blank" rel="noopener">
+          <div class="thumb-img">
+            <img src="assets/images/Practice Thumbnail 1.png" alt="Thumbnail" />
+          </div>
+          <div class="thumb-meta">
+            <h3 class="thumb-name">Pracite Thumbnail 1</h3>
+          </div>
+        </a>
+
+        <!-- Add more cards like this -->
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // top nav logic (same as your other pages)
+    const topbar = document.getElementById("topbar");
+
+    function updateTopbar() {
+      if (window.scrollY <= 5) topbar.classList.remove("hidden");
+      else topbar.classList.add("hidden");
+    }
+
+    window.addEventListener("scroll", updateTopbar, { passive: true });
+    updateTopbar();
+  </script>
+
+</body>
+</html>

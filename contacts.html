@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacts • Viks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- same header -->
+  <header class="topbar hidden" id="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Viks</div>
+
+      <nav class="nav">
+        <a href="index.html">Clients</a>
+        <a href="videos.html">Videos</a>
+        <a href="thumbnails.html">Thumbnails</a>
+        <a href="contacts.html" class="active">Contacts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contacts-page">
+    <div class="container contacts-center">
+
+      <section class="contact-card">
+        <h1 class="page-title">Contacts</h1>
+        <p class="page-subtitle">Reach out anywhere below.</p>
+
+        <div class="contact-list">
+
+          <a class="contact-row" href="https://discord.com/users/viikss" target="_blank" rel="noopener">
+            <span class="contact-icon">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20.317 4.369a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.211.375-.444.864-.608 1.249a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.249.077.077 0 00-.079-.037 19.736 19.736 0 00-4.885 1.515.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.056 19.9 19.9 0 006.006 3.037.077.077 0 00.084-.027c.462-.63.873-1.295 1.226-1.994a.076.076 0 00-.041-.105 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128c.126-.095.252-.194.371-.291a.074.074 0 01.077-.01c3.927 1.793 8.18 1.793 12.061 0a.073.073 0 01.078.01c.12.097.245.196.372.291a.077.077 0 01-.006.128 12.299 12.299 0 01-1.873.891.076.076 0 00-.04.106c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.867 19.867 0 006.007-3.037.077.077 0 00.031-.055c.5-5.177-.838-9.673-3.548-13.66a.061.061 0 00-.031-.028z"/>
+  </svg>
+</span>
+            <div class="contact-text">
+              <div class="contact-label">Discord</div>
+              <div class="contact-value">@viikss</div>
+            </div>
+          </a>
+
+          <a class="contact-row" href="https://instagram.com/_skiiv" target="_blank" rel="noopener">
+           <span class="contact-icon">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3.5A4.5 4.5 0 1016.5 12 4.505 4.505 0 0012 7.5zm0 7.3A2.8 2.8 0 1114.8 12 2.804 2.804 0 0112 14.8zM17.25 6.75a1.05 1.05 0 11-1.05-1.05 1.05 1.05 0 011.05 1.05z"/>
+  </svg>
+</span>
+            <div class="contact-text">
+              <div class="contact-label">Instagram</div>
+              <div class="contact-value">@_skiiv</div>
+            </div>
+          </a>
+
+          <a class="contact-row" href="https://x.com/ViktorGranch" target="_blank" rel="noopener">
+            <span class="contact-icon">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M18.244 2H21l-6.52 7.455L22.5 22h-6.6l-5.17-6.708L4.8 22H2l6.98-7.98L1.5 2h6.7l4.68 6.11L18.244 2z"/>
+  </svg>
+</span>
+            <div class="contact-text">
+              <div class="contact-label">Twitter (X)</div>
+              <div class="contact-value">@ViktorGranch</div>
+            </div>
+          </a>
+
+          <a class="contact-row" href="mailto:viktor.grancharov9@gmail.com">
+           <span class="contact-icon">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6zm2 0l8 5 8-5H4zm16 12V8l-8 5-8-5v10h16z"/>
+  </svg>
+</span>
+            <div class="contact-text">
+              <div class="contact-label">Email</div>
+              <div class="contact-value">viktor.grancharov9@gmail.com</div>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script>
+    // top nav logic
+    const topbar = document.getElementById("topbar");
+    function updateTopbar() {
+      if (window.scrollY <= 5) topbar.classList.remove("hidden");
+      else topbar.classList.add("hidden");
+    }
+    window.addEventListener("scroll", updateTopbar, { passive: true });
+    updateTopbar();
+  </script>
+
+</body>
+</html>

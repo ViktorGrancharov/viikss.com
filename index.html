@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Editing Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar hidden" id="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Viks</div>
+
+      <nav class="nav">
+        <a href="index.html">Clients</a>
+        <a href="videos.html">Videos</a>
+        <a href="thumbnails.html">Thumbnails</a>
+        <a href="contacts.html">Contacts</a>
+      </nav>
+    </div>
+  </header>
+
+  <header class="site-header">
+    <div class="container hero">
+      <div class="hero-left">
+        <!-- Replace src with your photo -->
+        <img class="profile-pic" src="assets/images/Viks.jpg" alt="Picture of me" />
+      </div>
+
+      <div class="hero-right">
+        <h1 class="title">Editing Portfolio</h1>
+
+        <p class="subtitle">
+          Hi, my name is <span class="accent">Viktor</span> aka Viks.
+        </p>
+
+        <p class="bio">
+          I’m a video editor focused on fast-paced, clean, high-retention edits.
+          I do shorts, long-form, gaming, and YouTube content. I also am working
+          on bettering my skills in motion graphics and thumbnail-making.
+        </p>
+
+        
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="clients" class="section">
+      <div class="container">
+        <h2 class="section-title">Clients I’ve worked with</h2>
+        <div class="clients-wrap">
+        <div class="clients-grid">
+        <a href="https://www.youtube.com/@Sweatgod" target="_blank" rel="noopener noreferrer"class="card-link">
+            <article class="client-card" style="--card-bg: rgb(88, 6, 36); --card-accent: #b2184a;">
+            <div class="client-thumb">
+            <img src="assets/images/sweatgodFORwebsite.png" alt="Sweatgod logo" />
+            </div>
+            <h3 class="client-name">Sweatgod</h3>
+            <p class="client-note">YouTube • Gaming • Longform • ShortForm</p>
+            </article>
+        </a>
+        <a href="https://www.youtube.com/@RainDyN" target="_blank" rel="noopener noreferrer" class="card-link">
+          <article class="client-card" style="--card-bg: rgb(6, 58, 88); --card-accent: #184eb2;">
+            <div class="client-thumb">
+            <img src="assets/images/RainForWebsite.png" alt="Client 2 logo"/>
+            </div>
+            <h3 class="client-name">Rain_dynasty</h3>
+            <p class="client-note">YouTube • Gaming • Longform</p>
+          </article>
+        </a>
+            <a href="https://www.youtube.com/@flowtives" target="_blank" rel="noopener noreferrer" class="card-link">
+            <article class="client-card" style="--card-bg: #2a1f3d; --card-accent: #543c7a;">
+            <div class="client-thumb">
+            <img src="assets/images/FlowForWebsite.png" alt="Client 3 logo" />
+            </div>
+            <h3 class="client-name">Flowtives</h3>
+            <p class="client-note">YouTube • Gaming • Longform</p>
+            </article>
+        </a>
+            <a href="https://www.youtube.com/@Scotteh" target="_blank" rel="noopener noreferrer" class="card-link">
+            <article class="client-card" style="--card-bg: rgb(49, 133, 124); --card-accent:rgb(119, 206, 197);">
+            <div class="client-thumb">
+            <img src="assets/images/ScottehForWebsite.png" alt="Client 3 logo" />
+            </div>
+            <h3 class="client-name">Scotteh</h3>
+            <p class="client-note">YouTube • Gaming • Longform • Intros</p>
+            </article>
+        </a>
+            <a href="https://www.youtube.com/@GreninjaTTV" target="_blank" rel="noopener noreferrer" class="card-link">
+            <article class="client-card" style="--card-bg:rgb(5, 12, 54); --card-accent: rgb(34, 52, 116);">
+            <div class="client-thumb">
+            <img src="assets/images/GreninjaForWebsite.png" alt="Client 3 logo" />
+            </div>
+            <h3 class="client-name">Greninja</h3>
+            <p class="client-note">YouTube • Gaming • Longform</p>
+            </article>
+        </a>
+      </div>
+      </div>
+      </div>
+    </section> 
+</main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Viktor Grancharov | Instagram: _skiiv | Discord: viikss | X: ViktorGranch</p>
+    </div>
+  </footer>
+
+ <script>
+  // footer year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // top nav logic
+  const topbar = document.getElementById("topbar");
+
+  function updateTopbar() {
+    if (window.scrollY <= 5) {
+      topbar.classList.remove("hidden");
+    } else {
+      topbar.classList.add("hidden");
+    }
+  }
+
+  window.addEventListener("scroll", updateTopbar, { passive: true });
+  updateTopbar(); // run once on load
+</script>
+</body>
+</html>
