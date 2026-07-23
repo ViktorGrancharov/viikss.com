@@ -92,7 +92,7 @@ img{ display:block; max-width:100%; }
 .accent{ color: var(--accent); font-weight: 700; }
 
 .bio{
-     font-size: 16.5px; max-width: 70ch; 
+     font-size: 30px; max-width: 70ch; 
   margin: 0 0 22px;
   max-width: 56ch;
   color: var(--muted);
